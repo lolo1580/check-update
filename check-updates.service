@@ -1,0 +1,7 @@
+[Unit]
+Description=Vérifie les mises à jour apt et envoie sur Discord
+After=network-online.target
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/bin/check-updates.sh
