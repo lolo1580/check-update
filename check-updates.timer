@@ -1,0 +1,9 @@
+[Unit]
+Description=Lancement hebdomadaire du script de mise à jour
+
+[Timer]
+OnCalendar=Mon 18:00
+Persistent=true
+
+[Install]
+WantedBy=timers.target
